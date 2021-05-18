@@ -34,7 +34,7 @@ public class IMDecoder extends ByteToMessageDecoder {
 	        		return;
 	        	}
 	        }
-	        
+			System.out.println(123);
 	        in.getBytes(in.readerIndex(), array, 0, length);
 	        out.add(new MessagePack().read(array,IMMessage.class));
 	        in.clear();
